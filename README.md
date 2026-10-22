@@ -34,7 +34,7 @@ Then add the dependency to your app module:
 
 ```kotlin
 dependencies {
-    implementation("com.github.nugitech.adrianhq-sdk-android-kotlin:adrian-chat:0.1.0")
+    implementation("com.github.nugitech:adrianhq-sdk-android-kotlin:0.1.0")
 }
 ```
 
