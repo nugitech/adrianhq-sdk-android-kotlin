@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Good afternoon"
+                android:textColor="#6B7180"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Welcome"
+                android:textColor="#14161C"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView style="@style/Tile" android:text="Pay a bill\nTaxes, levies and fees" />
+            <TextView style="@style/Tile" android:text="Verify a receipt\nCheck a payment reference" />
+            <TextView style="@style/Tile" android:text="History\nYour last 12 payments" />
+
+            <LinearLayout
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/tile"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Help &amp; support"
+                    android:textColor="#14161C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/help_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="2dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:minHeight="0dp"
+                android:paddingHorizontal="18dp"
+                android:paddingVertical="10dp"
+                android:stateListAnimator="@null"
+                android:text="Sign in as Ada"
+                android:textAllCaps="false"
+                android:textColor="#14161C"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.adrianhq.chat.AdrianLauncherButton
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp" />
+</FrameLayout>
